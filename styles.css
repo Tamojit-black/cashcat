@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #5d9cec; /* Lighter Blue for highlights */
-    --secondary-color: #4CAF50; /* Green for success/savings */
-    --background-dark: #121212; /* Deep background */
-    --surface-color: #1e1e1e; /* Card/Container background */
-    --text-light: #e0e0e0; /* Main text color */
-    --text-muted: #a0a0a0; /* Subtext */
+    --primary-color: #1469d8; 
+    --secondary-color: #4CAF50; 
+    --background-dark: #121212; 
+    --surface-color: #1e1e1e; 
+    --text-light: #e0e0e0; 
+    --text-muted: #a0a0a0; 
     --border-color: #333333;
     --font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -19,7 +19,7 @@ body {
     font-family: var(--font-stack);
     color: var(--text-light);
     line-height: 1.6;
-    background-color: var(--background-dark); /* Dark Background */
+    background-color: var(--background-dark); 
 }
 
 .container {
@@ -34,9 +34,9 @@ h1, h2, h3 {
     color: var(--primary-color);
 }
 
-/* --- Navigation Bar --- */
+
 .navbar {
-    background-color: var(--surface-color); /* Dark surface color */
+    background-color: var(--surface-color); 
     border-bottom: 1px solid var(--border-color);
     padding: 1rem 0;
 }
@@ -47,29 +47,28 @@ h1, h2, h3 {
     align-items: center;
 }
 
-/* --- LOGO STYLING --- */
+
 .logo {
-    font-size: 2.2rem; /* Thoda bada font size */
-    font-weight: 800; /* Extra bold */
-    color: var(--primary-color); /* Primary blue color */
+    font-size: 2.2rem; 
+    font-weight: 800; 
     text-decoration: none;
-    letter-spacing: -1px; /* Letters ko thoda kareeb karega */
-    display: flex; /* Flexbox use karenge icon-like effect ke liye */
+    letter-spacing: -1px; 
+    display: flex; 
     align-items: center;
-    line-height: 1; /* Line height adjust karein */
+    line-height: 1; 
 }
 
 .logo span.cash {
-    color: var(--secondary-color); /* 'Cash' ke liye green color */
+    color: var(--secondary-color); 
 }
 
 .logo::before {
-    content: '💰'; /* Emoji icon as a pseudo-element */
-    font-size: 1.5rem; /* Icon size */
-    margin-right: 8px; /* Icon aur text ke beech space */
+    content: '💰';
+    font-size: 1.5rem;
+    margin-right: 8px; 
     line-height: 1;
 }
-/* --- END LOGO STYLING --- */
+
 
 
 .nav-links a {
@@ -85,7 +84,7 @@ h1, h2, h3 {
     border-bottom: 2px solid var(--secondary-color);
 }
 
-/* --- Buttons --- */
+
 .btn {
     display: inline-block;
     padding: 10px 25px;
@@ -104,10 +103,10 @@ h1, h2, h3 {
 }
 
 .btn-primary:hover {
-    background-color: #4086e0; /* Slightly darker hover */
+    background-color: #4086e0; 
 }
 
-/* --- Hero Section (Home Page) --- */
+
 .hero {
     background-color: var(--surface-color);
     text-align: center;
@@ -120,7 +119,7 @@ h1, h2, h3 {
     margin-bottom: 10px;
 }
 
-/* --- Feature Cards (Home Page) --- */
+
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -134,14 +133,14 @@ h1, h2, h3 {
     border: 1px solid var(--border-color);
     border-radius: 8px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
 }
 
 .feature-card h3 {
     color: var(--secondary-color);
 }
 
-/* --- Forms & Calculators (General Styling) --- */
+
 .calculator-form, .tracker-input {
     background-color: var(--surface-color);
     padding: 30px;
@@ -168,14 +167,14 @@ h1, h2, h3 {
     border: 1px solid var(--border-color);
     border-radius: 4px;
     font-size: 1rem;
-    background-color: #2a2a2a; /* Slightly lighter input background */
+    background-color: #2a2a2a; 
     color: var(--text-light);
 }
 
 .result-box {
     margin-top: 20px;
     padding: 15px;
-    background-color: #28a745; /* Green for positive results */
+    background-color: #28a745; 
     color: #fff;
     border-radius: 5px;
     text-align: center;
@@ -183,7 +182,7 @@ h1, h2, h3 {
     font-weight: 600;
 }
 
-/* --- Tracker Summary Cards --- */
+
 .summary-grid {
     display: flex;
     justify-content: space-around;
@@ -199,16 +198,16 @@ h1, h2, h3 {
     color: #fff;
 }
 
-.income { background-color: #17a2b8; } /* Info Blue (Income) */
-.expenses { background-color: #dc3545; } /* Danger Red (Expenses) */
-.savings { background-color: var(--secondary-color); } /* Success Green (Savings) */
+.income { background-color: #17a2b8; } 
+.expenses { background-color: #dc3545; } 
+.savings { background-color: var(--secondary-color); } 
 
 .summary-card p {
     font-size: 2rem;
     font-weight: 700;
 }
 
-/* --- Table Styles (Tracker Page) --- */
+
 .transaction-table {
     width: 100%;
     border-collapse: collapse;
@@ -228,10 +227,10 @@ h1, h2, h3 {
 }
 
 .transaction-table tr:nth-child(even) {
-    background-color: #2a2a2a; /* Darker stripe for readability */
+    background-color: #2a2a2a; 
 }
 
-/* --- Learn Page Layout --- */
+
 .learn-content {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -277,7 +276,7 @@ h1, h2, h3 {
     margin-bottom: 20px;
 }
 
-/* --- Footer --- */
+
 .footer {
     background-color: var(--surface-color);
     color: var(--text-muted);
@@ -287,7 +286,7 @@ h1, h2, h3 {
     border-top: 1px solid var(--border-color);
 }
 
-/* --- Media Queries (Responsiveness - No changes needed here) --- */
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
