@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Calculators - WealthWise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">WealthWise</a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="tracker.html">Tracker</a>
+                <a href="calculators.html">Calculators</a>
+                <a href="learn.html">Learn</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Financial Calculators</h1>
+        <p>Tools to help you plan your investments and loan repayments.</p>
+
+        <div class="calculator-form">
+            <h2>SIP Returns Calculator (Static)</h2>
+            <form>
+                <div class="form-group">
+                    <label for="sipAmount">Monthly Investment (₹)</label>
+                    <input type="number" id="sipAmount" placeholder="5000" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="tenure">Time Horizon (Years)</label>
+                    <input type="number" id="tenure" placeholder="10" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="returnRate">Expected Annual Return (%)</label>
+                    <input type="number" id="returnRate" placeholder="12" min="0" required>
+                </div>
+                <button type="submit" class="btn btn-primary" disabled>Calculate Corpus (Static)</button>
+            </form>
+            <div class="result-box">
+                <p>Estimated Future Value: ₹ 11,61,698</p>
+                <small>This result is static. The live calculation will be integrated in Phase 2.</small>
+            </div>
+        </div>
+
+        <div class="calculator-form">
+            <h2>Loan EMI Calculator (Static)</h2>
+            <form>
+                <div class="form-group">
+                    <label for="principal">Principal Loan Amount (₹)</label>
+                    <input type="number" id="principal" placeholder="1000000" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="loanRate">Annual Interest Rate (%)</label>
+                    <input type="number" id="loanRate" placeholder="9" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="loanTenure">Loan Tenure (Months)</label>
+                    <input type="number" id="loanTenure" placeholder="120" min="1" required>
+                </div>
+                <button type="submit" class="btn btn-primary" disabled>Calculate EMI (Static)</button>
+            </form>
+            <div class="result-box">
+                <p>Estimated Monthly EMI: ₹ 12,668</p>
+                <small>This result is static. The live calculation will be integrated in Phase 2.</small>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 WealthWise. Capstone Project for SNW.</p>
+    </footer>
+</body>
+</html>

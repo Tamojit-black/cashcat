@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker - WealthWise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">WealthWise</a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="tracker.html">Tracker</a>
+                <a href="calculators.html">Calculators</a>
+                <a href="learn.html">Learn</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Budget & Expense Tracker</h1>
+        <p>This is the static layout for your live tracking dashboard.</p>
+
+        <div class="summary-grid">
+            <div class="summary-card income">
+                <h3>Total Income</h3>
+                <p>₹ 0.00</p>
+            </div>
+            <div class="summary-card expenses">
+                <h3>Total Expenses</h3>
+                <p>₹ 0.00</p>
+            </div>
+            <div class="summary-card savings">
+                <h3>Net Savings</h3>
+                <p>₹ 0.00</p>
+            </div>
+        </div>
+
+        <div class="tracker-input">
+            <h2>Add New Transaction (Static)</h2>
+            <form id="transactionForm">
+                <div class="form-group">
+                    <label for="type">Type</label>
+                    <select id="type" name="type">
+                        <option value="expense">Expense</option>
+                        <option value="income">Income</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="item">Item/Description</label>
+                    <input type="text" id="item" name="item" placeholder="e.g., Monthly Rent" required>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Amount (₹)</label>
+                    <input type="number" id="amount" name="amount" placeholder="5000" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <button type="submit" class="btn btn-primary" disabled>Add Transaction (Static)</button>
+            </form>
+        </div>
+
+        <h2>Transaction History</h2>
+        <table class="transaction-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Item</th>
+                    <th>Type</th>
+                    <th>Amount (₹)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2025-11-15</td>
+                    <td>Groceries</td>
+                    <td>Expense</td>
+                    <td>-2500</td>
+                </tr>
+                <tr>
+                    <td>2025-11-01</td>
+                    <td>Monthly Salary</td>
+                    <td>Income</td>
+                    <td>+50000</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 WealthWise. Capstone Project for SNW.</p>
+    </footer>
+</body>
+</html>
